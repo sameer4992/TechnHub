@@ -120,6 +120,7 @@ body {
 
 .about-content,
 .mission-content {
+    width: 100%;
     flex: 1;
 }
 
