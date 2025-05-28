@@ -120,12 +120,12 @@ body {
 
 .about-content,
 .mission-content {
-    width: 100%;
     flex: 1;
 }
 
 .about-image,
 .mission-image {
+    width: 100%;
     flex: 1;
 }
 
