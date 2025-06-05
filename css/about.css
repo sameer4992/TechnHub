@@ -1,0 +1,451 @@
+/* Base Styles */
+:root {
+    --background: #0c090c;
+    --primary: #c2adc2;
+    --secondary: #486148;
+    --secondary-dark: #3a4a3a;
+    --secondary-light: #5a7a5a;
+    --accent: #8a6e8a;
+}
+
+body {
+    background-color: var(--background);
+    color: var(--primary);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.main-header {
+    background-color: rgba(12, 9, 12, 0.9);
+    padding: 20px 0;
+    position: relative;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    margin: 0;
+    font-size: 2rem;
+    color: var(--secondary);
+    letter-spacing: 1px;
+}
+
+.main-nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 25px;
+}
+
+.main-nav a {
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+    position: relative;
+    padding: 5px 0;
+}
+
+.main-nav a:hover,
+.main-nav a.active {
+    color: var(--secondary);
+}
+
+.main-nav a.active::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--secondary);
+}
+
+/* Hero Section */
+.about-hero {
+    background: linear-gradient(135deg, rgba(12, 9, 12, 0.8) 0%, rgba(72, 97, 72, 0.4) 100%);
+    padding: 100px 0;
+    margin: 40px 0 60px;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.about-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><path fill="%23486148" opacity="0.1" d="M0,0 L100,0 L100,100 Q50,80 0,100 Z"></path></svg>') bottom center no-repeat;
+    background-size: 100% 30%;
+    z-index: -1;
+}
+
+.about-hero h1 {
+    font-size: 2.8rem;
+    color: var(--secondary);
+    margin-bottom: 15px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about-hero .subtitle {
+    font-size: 1.3rem;
+    opacity: 0.9;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* About Section */
+.about-section,
+.mission-section {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    margin: 80px 0;
+}
+
+.about-content,
+.mission-content {
+    flex: 1;
+}
+
+.about-image,
+.mission-image {
+    width: 100%;
+    flex: 1;
+}
+
+#ourStory {
+    background-image: url("../photos/ourStory.jpg");
+}
+
+#ourMission {
+    background-image: url("../photos/ourMission.jpg");
+}
+
+.about-section h2,
+.mission-section h2 {
+    color: var(--secondary);
+    font-size: 2rem;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.about-section p,
+.mission-section p {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+.image-placeholder {
+    height: 400px;
+    border-radius: 8px;
+}
+
+.mission-list {
+    list-style: none;
+    padding: 0;
+}
+
+.mission-list li {
+    margin-bottom: 15px;
+    padding-left: 30px;
+    position: relative;
+    font-size: 1.1rem;
+}
+
+.mission-list li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--secondary);
+    font-weight: bold;
+}
+
+/* Team Section */
+.team-section {
+    margin: 100px 0;
+    text-align: center;
+}
+
+.section-title {
+    color: var(--secondary);
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+}
+
+.section-subtitle {
+    font-size: 1.1rem;
+    opacity: 0.8;
+    margin-bottom: 50px;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    margin-top: 50px;
+}
+
+#sameer {
+    background-image: url("../photos/Sameer.JPG");
+    background-size: contain;
+    background-position-y: center;
+}
+
+#faran {
+    background-image: url("../photos/faran.jpeg");
+    background-size: contain;
+}
+
+#afnan {
+    background-image: url("../photos/afnan.jpeg");
+    background-size: contain;
+    background-position-x: center;
+}
+
+.team-member {
+    background-color: rgba(194, 173, 194, 0.05);
+    border-radius: 8px;
+    padding: 30px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.team-member:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(72, 97, 72, 0.1);
+}
+
+.member-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+}
+
+.team-member h3 {
+    margin: 20px 0 5px;
+    font-size: 1.4rem;
+    color: var(--secondary);
+}
+
+.position {
+    margin: 0 0 15px;
+    font-weight: 500;
+    color: var(--primary);
+    opacity: 0.8;
+}
+
+.bio {
+    margin: 0;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* Values Section */
+.values-section {
+    margin: 100px 0;
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.value-card {
+    background-color: rgba(194, 173, 194, 0.05);
+    border-radius: 8px;
+    padding: 30px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.value-card:hover {
+    transform: translateY(-5px);
+}
+
+.value-icon {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.value-card h3 {
+    color: var(--secondary);
+    margin: 0 0 15px;
+    font-size: 1.3rem;
+}
+
+.value-card p {
+    margin: 0;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* CTA Section */
+.cta-section {
+    background: linear-gradient(135deg, rgba(12, 9, 12, 0.8) 0%, rgba(72, 97, 72, 0.4) 100%);
+    padding: 80px 0;
+    margin: 80px 0;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.cta-content h2 {
+    color: var(--secondary);
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.cta-content p {
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto 30px;
+    opacity: 0.9;
+}
+
+.newsletter-form {
+    display: flex;
+    max-width: 500px;
+    margin: 0 auto;
+    gap: 10px;
+}
+
+.newsletter-form input {
+    flex: 1;
+    padding: 12px 20px;
+    background-color: rgba(12, 9, 12, 0.8);
+    border: 1px solid var(--secondary);
+    border-radius: 4px;
+    color: var(--primary);
+    font-size: 1rem;
+}
+
+.newsletter-form button {
+    background-color: var(--secondary);
+    color: var(--background);
+    border: none;
+    padding: 0 25px;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.newsletter-form button:hover {
+    background-color: var(--secondary-light);
+}
+
+/* Footer Styles */
+.main-footer {
+    background-color: rgba(12, 9, 12, 0.95);
+    padding: 40px 0;
+    text-align: center;
+    border-top: 1px solid var(--secondary);
+    margin-top: 60px;
+}
+
+.footer-nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.footer-nav a {
+    color: var(--primary);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-nav a:hover {
+    color: var(--secondary);
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    .about-section,
+    .mission-section {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .mission-section {
+        flex-direction: column-reverse;
+    }
+    
+    .image-placeholder {
+        height: 300px;
+    }
+    
+    .about-hero h1 {
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .about-hero {
+        padding: 80px 0;
+    }
+    
+    .about-hero h1 {
+        font-size: 1.8rem;
+    }
+    
+    .newsletter-form {
+        flex-direction: column;
+    }
+    
+    .newsletter-form button {
+        padding: 12px;
+    }
+    
+    .main-nav ul {
+        gap: 15px;
+    }
+}
+
+.sub-succ {
+    margin-top: 18px !important;
+    color: #32da32;
+    display: none;
+}
+
+@media (max-width: 480px) {
+    .team-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .values-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .main-nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .cart-icon {
+        margin-left: 0;
+        margin-top: 15px;
+    }
+}

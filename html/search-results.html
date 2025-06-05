@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/search-results.css">
+    <title>Collection</title>
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <h1 class="logo">TechnHub</h1>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="categories.html">Categories</a></li>
+                    <li><a href="index.html#featured">Featured</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="user-account.html">Account</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+            <div class="search-container">
+                <form action="search.html" method="GET">
+                    <input type="text" name="q" placeholder="Search eBooks..." class="search-input" value="JavaScript">
+                    <button type="submit" class="search-btn">Search</button>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="search-results-header">
+            <h1>Search Results for "JavaScript"</h1>
+            <p class="results-count">24 eBooks found</p>
+            <div class="sort-options">
+                <label for="sort">Sort by:</label>
+                <select id="sort" class="sort-select">
+                    <option value="relevance">Relevance</option>
+                    <option value="price-low">Price: Low to High</option>
+                    <option value="price-high">Price: High to Low</option>
+                    <option value="newest">Newest First</option>
+                    <option value="rating">Highest Rated</option>
+                </select>
+            </div>
+        </section>
+
+        <section class="search-results-grid">
+            <div class="result-card">
+                <div class="book-cover" id="js-complete" style="background-color: #3a4a3a;"></div>
+                <div class="result-details">
+                    <h2><a href="#">JavaScript: The Complete Guide</a></h2>
+                    <p class="author">By TechnHub</p>
+                    <div class="rating">
+                        <span class="stars">★★★★☆</span>
+                        <span class="rating-count">(142 reviews)</span>
+                    </div>
+                    <p class="description">If you are new, Python is an excellent language to begin with since many people learn it and find it easy to use...</p>
+                    <div class="price-section">
+                        <span class="price">$24.99</span>
+                        <span class="original-price">$29.99</span>
+                    </div>
+                    <a href="#" class="btn">Add to Cart</a>
+                </div>
+            </div>
+
+            <div class="result-card">
+                <div class="book-cover" id="js-modern" style="background-color: #4a3a4a;"></div>
+                <div class="result-details">
+                    <h2><a href="#">Modern JavaScript Frameworks</a></h2>
+                    <p class="author">By TechnHub</p>
+                    <div class="rating">
+                        <span class="stars">★★★★★</span>
+                        <span class="rating-count">(87 reviews)</span>
+                    </div>
+                    <p class="description">Look into React, Vue and Angular in more detail. Get familiar with picking the correct framework and understand component-based style for your projects...</p>
+                    <div class="price-section">
+                        <span class="price">$27.99</span>
+                    </div>
+                    <a href="#" class="btn">Add to Cart</a>
+                </div>
+            </div>
+
+            <div class="result-card">
+                <div class="book-cover" id="js-pattern" style="background-color: #3a4a4a;"></div>
+                <div class="result-details">
+                    <h2><a href="#">JavaScript Patterns</a></h2>
+                    <p class="author">By TechnHub</p>
+                    <div class="rating">
+                        <span class="stars">★★★★☆</span>
+                        <span class="rating-count">(65 reviews)</span>
+                    </div>
+                    <p class="description">Make sure you know the essential JavaScript patterns and tips to write codes that are easy to maintain. It includes coverage of module patterns, promises, async/await and other elements....</p>
+                    <div class="price-section">
+                        <span class="price">$21.99</span>
+                        <span class="original-price">$25.99</span>
+                    </div>
+                    <a href="#" class="btn">Add to Cart</a>
+                </div>
+            </div>
+
+            <div class="result-card">
+                <div class="book-cover" id="node" style="background-color: #4a4a3a;"></div>
+                <div class="result-details">
+                    <h2><a href="#">Node.js in Action</a></h2>
+                    <p class="author">By TechnHub</p>
+                    <div class="rating">
+                        <span class="stars">★★★★☆</span>
+                        <span class="rating-count">(93 reviews)</span>
+                    </div>
+                    <p class="description">Express, REST API, authentication, database support and deployment are some of the features taught in this section on Node.js....</p>
+                    <div class="price-section">
+                        <span class="price">$29.99</span>
+                    </div>
+                    <a href="#" class="btn">Add to Cart</a>
+                </div>
+            </div>
+
+            <div class="result-card">
+                <div class="book-cover" id="js-beginner" style="background-color: #3a3a4a;"></div>
+                <div class="result-details">
+                    <h2><a href="#">JavaScript for Beginners</a></h2>
+                    <p class="author">By TechnHub</p>
+                    <div class="rating">
+                        <span class="stars">★★★☆☆</span>
+                        <span class="rating-count">(42 reviews)</span>
+                    </div>
+                    <p class="description">A beginner-level look at how to use JavaScript. Excellent for people who have never programmed before because it includes plenty of exercises and projects....</p>
+                    <div class="price-section">
+                        <span class="price">$18.99</span>
+                        <span class="original-price">$22.99</span>
+                    </div>
+                    <a href="#" class="btn">Add to Cart</a>
+                </div>
+            </div>
+        </section>
+
+        <div class="pagination">
+            <a href="#" class="page-btn disabled">Previous</a>
+            <a href="#" class="page-btn active">1</a>
+            <a href="#" class="page-btn">2</a>
+            <a href="#" class="page-btn">3</a>
+            <a href="#" class="page-btn">Next</a>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2025 TechnHub. All rights reserved.</p>
+            <nav class="footer-nav">
+                <ul>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+</body>
+</html>

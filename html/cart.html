@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="../css/cart.css">
+    <title>Cart</title>
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <h1 class="logo">TechnHub</h1>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="categories.html">Categories</a></li>
+                    <li><a href="index.html#featured">Featured</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="user-account.html">Account</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+            <div class="cart-icon">
+                <a href="cart.html">🛒 <span class="cart-count">3</span></a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="cart-header">
+            <h1>Your Shopping Cart</h1>
+            <p class="item-count">3 items in your cart</p>
+        </section>
+
+        <div class="cart-layout">
+            <section class="cart-items">
+                <div class="cart-item">
+                    <div class="item-cover" id="js-guide" style="background-color: #3a4a3a;"></div>
+                    <div class="item-details">
+                        <h2><a href="book-details.html">JavaScript: The Complete Guide</a></h2>
+                        <p class="author">By TechnHub</p>
+                        <div class="item-actions">
+                            <div class="quantity-selector">
+                                <button class="qty-btn">−</button>
+                                <span class="quantity">1</span>
+                                <button class="qty-btn">+</button>
+                            </div>
+                            <button class="remove-btn">Remove</button>
+                        </div>
+                    </div>
+                    <div class="item-price">
+                        <span class="price">$24.99</span>
+                        <span class="original-price">$29.99</span>
+                    </div>
+                </div>
+
+                <div class="cart-item">
+                    <div class="item-cover" id="js-framework" style="background-color: #4a3a4a;"></div>
+                    <div class="item-details">
+                        <h2><a href="book-details.html">Modern JavaScript Frameworks</a></h2>
+                        <p class="author">By TechnHub</p>
+                        <div class="item-actions">
+                            <div class="quantity-selector">
+                                <button class="qty-btn">−</button>
+                                <span class="quantity">1</span>
+                                <button class="qty-btn">+</button>
+                            </div>
+                            <button class="remove-btn">Remove</button>
+                        </div>
+                    </div>
+                    <div class="item-price">
+                        <span class="price">$27.99</span>
+                    </div>
+                </div>
+
+                <div class="cart-item">
+                    <div class="item-cover" id="js-pattern" style="background-color: #3a4a4a;"></div>
+                    <div class="item-details">
+                        <h2><a href="book-details.html">JavaScript Patterns</a></h2>
+                        <p class="author">By TechnHub</p>
+                        <div class="item-actions">
+                            <div class="quantity-selector">
+                                <button class="qty-btn">−</button>
+                                <span class="quantity">1</span>
+                                <button class="qty-btn">+</button>
+                            </div>
+                            <button class="remove-btn">Remove</button>
+                        </div>
+                    </div>
+                    <div class="item-price">
+                        <span class="price">$21.99</span>
+                        <span class="original-price">$25.99</span>
+                    </div>
+                </div>
+            </section>
+
+            <aside class="cart-summary">
+                <h2>Order Summary</h2>
+                <div class="summary-row">
+                    <span>Subtotal (3 items)</span>
+                    <span>$74.97</span>
+                </div>
+                <div class="summary-row">
+                    <span>Discount</span>
+                    <span class="discount">−$8.00</span>
+                </div>
+                <div class="summary-row">
+                    <span>Estimated Tax</span>
+                    <span>$5.25</span>
+                </div>
+                <div class="summary-row total">
+                    <span>Total</span>
+                    <span class="total-price">$72.22</span>
+                </div>
+                <button class="checkout-btn" onclick="window.location.href='payment.html'">Proceed to Checkout</button>
+                <p class="continue-shopping">
+                    <a href="shop.html">← Continue Shopping</a>
+                </p>
+                <div class="promo-code">
+                    <h3>Apply Promo Code</h3>
+                    <div class="promo-input">
+                        <input type="text" placeholder="Enter code">
+                        <button class="apply-btn">Apply</button>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2025 TechnHub. All rights reserved.</p>
+            <nav class="footer-nav">
+                <ul>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+</body>
+</html>
